@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registration Form</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 register">Registration Form</h3>
+           <!-- -----------------NAME----------------- -->
+           <div class="form-outline mb-2">
+               <label class="form-label" for="form3Example1q">Name</label>
+               <input type="text" id="name" class="form-control" onchange={onChangeName()} />
+               <label class="form-label" id="name-warning">Please enter a valid full name </label>
+
+           </div>
+           <!-- -----------------NAME----------------- -->
+    
+
+
+
+
+
+
+
+        <!-- -----------------GENDER----------------- -->
+        <label class="form-label" for="form3Example1q">Gender</label>
+        <select class="select mb-4" id="gender" onchange={onChangeGender()}>
+            <option value="1">Choose...</option>
+            <option value="2">Female</option>
+            <option value="3">Male</option>
+            <option value="4">Other</option>
+        </select>
+        <label class="form-label" id="gender-warning">Please select a valid gender </label>
+
+        <!-- -----------------GENDER----------------- -->
+
+
+
+
+
+
+
+
+        <!-- -----------------HOBBIES----------------- -->
+        <label class="form-label" for="form3Example1q">Hobbies</label>
+        <div class="form-check   justify-content-center mb-5">
+            <div class="check-item">
+                <input class="form-check-input me-2" type="checkbox" value="false" id="swimming" onclick={isChecked(swimming)} />
+                <label class="form-check-label" for="form2Example3">
+                  Swimming
+                </label>
+            </div>
+            
+            <div class="check-item">
+                <input class="form-check-input me-2" type="checkbox" value="false" id="reading" onclick={isChecked(reading)} />
+                <label class="form-check-label" for="form2Example3">
+                  Reading Novels
+                </label>
+            </div>
+
+            <div class="check-item">
+                <input class="form-check-input me-2" type="checkbox" value="false" id="dancing" onclick={isChecked(dancing)} />
+                <label class="form-check-label" for="form2Example3">
+                  Dancing
+                </label>
+            </div>
+
+            <div class="check-item">
+                <input class="form-check-input me-2" type="checkbox" value="false" id="singing" onclick={isChecked(singing)} />
+                <label class="form-check-label" for="form2Example3">
+                  Singing
+                </label>
+            </div>
+            <label class="form-label" for="form3Example1q" id="hobby">Select At least one hobby</label>
+
+        </div>
+
+        <div class="btn-cont">
+          <button class="btn" id="submit">Submit Form</button>  
+        </div>
+          
+    </div>
+
+<!-- ----------------------SCRIPT---------------------------------- -->
+      <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

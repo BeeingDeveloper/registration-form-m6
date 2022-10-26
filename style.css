@@ -1,0 +1,57 @@
+
+
+
+.container{
+    width: 30rem;
+    font-weight: 600;
+    position: relative;
+    top: 10rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.register{
+    text-align: center;
+}
+
+.select{
+    height: 2.5rem;
+    width: 100%;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+.form-label{
+    font-weight: 600;
+}
+.form-check{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+.btn-cont{
+    width: fit-content;
+    margin: auto;
+}
+.btn{
+    background: black;
+    color: white;
+    font-weight: 600;
+
+}
+#name-warning{
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+#gender-warning{
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+#hobby{
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
